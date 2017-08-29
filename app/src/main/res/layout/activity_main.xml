@@ -21,9 +21,7 @@
 
             <EditText
                 android:id="@+id/cocktails"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0.00" />
+                style="@style/input" />
 
            <TextView
                style="@style/label"
@@ -31,9 +29,7 @@
 
            <EditText
                android:id="@+id/beer"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:hint="0.00" />
+               style="@style/input" />
 
            <TextView
                style="@style/label"
@@ -41,9 +37,7 @@
 
            <EditText
                android:id="@+id/wine"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:hint="0.00" />
+               style="@style/input" />
 
            <TextView
                style="@style/label"
@@ -51,9 +45,7 @@
 
            <EditText
                android:id="@+id/food"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:hint="0.00" />
+               style="@style/input" />
 
            <TextView
                style="@style/label"
@@ -61,13 +53,8 @@
 
            <TextView
                android:id="@+id/subtotal"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="4dp"
-               android:textStyle="bold"
-               android:textSize="18sp"
                tools:text="0.00"
-           />
+               style="@style/total" />
 
            <TextView
                style="@style/label"
@@ -75,13 +62,8 @@
 
            <TextView
                android:id="@+id/tax"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="4dp"
-               android:textStyle="bold"
-               android:textSize="18sp"
                tools:text="0.00"
-           />
+               style="@style/total" />
 
            <TextView
                style="@style/label"
@@ -89,13 +71,8 @@
 
            <TextView
                android:id="@+id/total"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="4dp"
-               android:textStyle="bold"
-               android:textSize="18sp"
                tools:text="0.00"
-           />
+               style="@style/total" />
 
        </GridLayout>
 
