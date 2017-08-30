@@ -7,7 +7,9 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -29,6 +31,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         allFields().forEach { it.addTextChangedListener(listener) }
+
+        binding.addCocktail.setOnClickListener { _ ->
+            val newVal = asPrice(floatOrZero(binding.cocktails.text.toString()) + 13f)
+            binding.cocktails.setText(newVal, TextView.BufferType.NORMAL)
+        }
+
+        binding.clear.setOnClickListener { _ ->
+            allFields().forEach { it.setText("", TextView.BufferType.NORMAL ) }
+        }
     }
 
     fun updateTotals() {
